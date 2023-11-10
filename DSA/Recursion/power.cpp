@@ -7,13 +7,12 @@ int power(int a, int b){
 
     int ans = power(a, b/2);
 
-    if(b & 1 == 1){
+    if(b & 1 == 1)
         return a * ans * ans;
-    }else{
+    else
         return ans * ans;
-    }
 }
 
 int main(){
-    cout << power(2, 10);
+    cout << power(2, 30);
 }
