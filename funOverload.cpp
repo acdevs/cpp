@@ -7,7 +7,7 @@ void person(string name){
 void person(string name, int age){
     cout << "Hi! I'm " << name << " and I'm " << age << " years old." << endl;
 }
-void person(string name, int age, string interest){
+void person(string name, float age, string interest){
     cout << "Hi! I'm " << name << " and I'm " << age << " years old. I like " << interest << "." << endl;
 }
 

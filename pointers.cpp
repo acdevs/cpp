@@ -19,4 +19,27 @@ int main(){
 
     // p4 = &b; // not allowed
     // *p4 = 4; // not allowed
+
+    /* Types of Pointer */
+    /* 1. NULL Pointer */
+    int *p5 = NULL; //nullptr ?? 
+
+    /* 2. Void Pointer : generic pointer that can be typecasted into ...*/
+    void *p6 = &a;
+
+    /* 3. Wild Pointer : pointer that has not been initialized */
+    // int *p7; // wild pointer
+
+    /* 4. Dangling Pointer : pointer that points to a memory location that has been deleted */
+    int *p8 = new int(5);
+    delete p8;
+
+    /* 5. Garbage Pointer : pointer that points to a memory location that has not been initialized */
+    int *p9 = new int;
+
+
+    /* Address Typcasting */
+    int i = 65; 
+    int *p10 = &i;
+    char *pc = (char*) p10;
 }

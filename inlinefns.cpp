@@ -3,7 +3,6 @@ using namespace std;
 
 /* inline functions */
 
-// #harami compiler cause 'inline' is a request to the compiler
 // bc command nhi leta compiler!
 
 inline void fun(){
@@ -23,9 +22,10 @@ void foo(int x = 0, int y = 0, int z = 0){
 }
 
 int main(){
-    fun();
+    // cout << "Hello" << endl;
+    // cout << "Hello" << endl;
     foo();
     foo(1);
     foo(1, 2);
-    foo(1, 2, 3);
+    foo(0, 0, 3);
 }
