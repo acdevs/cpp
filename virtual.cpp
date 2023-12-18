@@ -8,8 +8,8 @@ class A{
             x = 10;
         }
         /* Normal virtual f */
-        void print(){
-            cout << x << endl;
+        virtual void print(){
+            cout << 10 << endl;
         }
 
         /* Pure virtual f */
@@ -22,7 +22,7 @@ class B : public A{
             x = 20;
         }
         void print(){
-            cout << " " << x << endl;
+            cout << " " << 20 << endl;
         }
 };
 

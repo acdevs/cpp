@@ -23,11 +23,9 @@ class A2 : public A{
     protected:
 
     public:
-    A2(){
-        x = 5;
-        y += 6;
-        z = 7;
-    }
+    // A2(){
+    //     x = 5;
+    // }
     void print(){
         cout << x << " " << y << " " << z << endl;
     }
@@ -37,6 +35,6 @@ int main(){
     A2 a2;
     a2.print();
 
-    A a;
+    A a ;
     cout << a.z << endl;
 }

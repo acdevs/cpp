@@ -5,7 +5,7 @@ class Base
 public:
     virtual void s() = 0; // Pure Virtual Function
 };
-class Derived : public Base
+class Derived : virtual public Base
 {
 public:
     void s()

@@ -1,7 +1,14 @@
 #include <iostream>
 using namespace std;
 
-/* Algorithm:
+/* 
+    * Heap sort is a comparison based sorting technique based on Binary Heap data structure.
+    * It is similar to selection sort where we first find the maximum element and place the maximum element at the end.
+    * 
+    * Time Complexity : O(nlogn) - Worst Case
+    *                  O(nlogn) - Average Case
+    *                 O(nlogn) - Best Case
+    Algorithm:
     * 1. Build a max heap
     * 2. Swap the first and last element
     * 3. Decrease the size of the heap by 1
@@ -26,7 +33,7 @@ void heapify(int arr[], int size, int i){
 }
 
 void heapSort(int arr[], int size){
-    while(size >= 1){
+    while(size > 1){
         swap(arr[1], arr[size]);
         size--;
 
